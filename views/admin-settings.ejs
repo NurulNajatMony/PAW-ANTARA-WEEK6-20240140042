@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Settings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800">
+    <div class="flex min-h-screen items-center justify-center px-4 py-10">
+        <div class="w-full max-w-3xl rounded-3xl border border-slate-200 bg-white p-8 shadow-lg shadow-slate-200/70">
+            <div class="mb-6 flex items-center justify-between gap-4 border-b border-slate-100 pb-6">
+                <div>
+                    <p class="text-sm font-semibold uppercase tracking-[0.3em] text-rose-600">Admin Only</p>
+                    <h1 class="mt-2 text-3xl font-semibold text-slate-900">System Settings</h1>
+                </div>
+                <div class="rounded-full border border-rose-200 bg-rose-50 px-3 py-1 text-sm font-medium text-rose-600">
+                    Administrator Access
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                    <h2 class="text-xl font-medium text-slate-800 mb-2">User Management</h2>
+                    <p class="text-sm text-slate-500 mb-4">View, add, modify, or delete user accounts from the system database.</p>
+                    <button onclick="alert('Fitur Manage Users sedang dalam tahap pengembangan.')" class="rounded-lg bg-rose-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-rose-700">Manage Users</button>
+                </div>
+
+                <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+                    <h2 class="text-xl font-medium text-slate-800 mb-2">Security Settings</h2>
+                    <p class="text-sm text-slate-500 mb-4">Configure two-factor authentication, password policies, and API keys.</p>
+                    <button onclick="alert('Fitur Configure Security sedang dalam tahap pengembangan.')" class="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:bg-slate-100">Configure Security</button>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-100 flex justify-start">
+                <a href="/dashboard" class="flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-slate-700 transition hover:border-sky-300 hover:text-sky-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                    Back to Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
